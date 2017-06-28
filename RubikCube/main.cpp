@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
+#include <fstream>
+#include <SOIL/SOIL.h>
+#include "rubik_cube.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
+    auto app = make_app<RubikCube>("RubikCube", 800, 600);
+
+    app->start();
+
     return 0;
 }
